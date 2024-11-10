@@ -1,0 +1,31 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.title {
+  font-size: 2rem;
+  font-family: "b titr";
+}
+.show-all__text {
+  transition: all 100ms linear;
+  width: fit-content;
+  position: relative;
+}
+.show-all__text:hover {
+  color: rgb(29, 163, 2);
+}
+.show-all__text::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  background-color: rgb(29, 163, 2);
+  height: 2px;
+  transition: all 100ms linear;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+}
+.show-all__text:hover::after {
+  width: 100%;
+}

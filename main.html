@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="insert">
+      <label class="title" for="insert">درج اطلاعات</label>
+      <div>
+        <form action="insert.php" method="get">
+          <input type="number" name="cod" id="insert" placeholder="کد" />
+          <input type="text" name="nam" placeholder="نام" />
+          <input type="number" name="price" placeholder="قیمت" />
+          <button type="submit">ایجاد</button>
+        </form>
+      </div>
+    </div>
+    <div class="update">
+      <label class="title" for="update">ویرایش اطلاعات</label>
+      <form action="update.php" method="get">
+        <input type="text" name="nam" id="update" placeholder="نام قدیم :" />
+        <input type="text" name="nam1" placeholder=" نام جدید :" />
+        <button type="submit">ویرایش</button>
+      </form>
+    </div>
+    <div class="delete">
+      <label class="title" for="delete">حذف اطلاعات</label>
+      <form action="delete.php" method="get">
+        <input type="text" name="nam" id="delete" placeholder="نام" />
+        <button type="submit">حذف</button>
+      </form>
+    </div>
+    <div class="search">
+      <label class="title" for="search">جستجوی اطلاعات</label>
+      <form action="search.php" method="get">
+        <input type="text" name="name" id="search" placeholder="نام" />
+        <button>جستجو</button>
+      </form>
+    </div>
+    <div class="show-all">
+      <p class="title show-all__text"><a href="./view.php">نمایش همه</a></p>
+    </div>
+  </body>
+</html>
